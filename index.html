@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Андрей Уренцев | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<canvas id="particles"> </canvas>
+<body>
+
+<nav class="nav">
+  <div class="burger" onclick="toggleMenu()">
+  ☰
+</div>
+  <ul id="menu">
+  <li><a href="#home">Главная</a></li>
+  <li><a href="#about">Обо мне</a></li>
+  <li><a href="#skills">Навыки</a></li>
+  <li><a href="#projects">Проекты</a></li>
+  <li><a href="#contact">Контакты</a></li>
+</ul>
+</nav>
+
+<header id="home" class="hero">
+  <h1>Андрей Уренцев</h1>
+  <p>Front-End разработчик</p>
+  <button onclick="scrollToSection('projects')">Мои проекты ↓</button>
+</header>
+
+<section id="about" class="glass">
+  <h2>Обо мне</h2>
+  <p>
+    Мне 15 лет. Изучаю программирование и веб-разработку.
+    Знаю HTML, CSS, немного JavaScript. Создаю адаптивные,
+    красивые сайты с анимациями и современным дизайном.
+  </p>
+</section>
+
+<section id="skills" class="glass">
+  <h2>Навыки</h2>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div style="width:100%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Responsive</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+</section>
+
+<section id="projects" class="glass">
+  <h2>Проекты</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Анимированный сайт</h3>
+      <p>Красивый сайт с эффектами и адаптацией.</p>
+      <button>Демо</button>
+    </div>
+
+    <div class="project-card">
+      <h3>Мини приложение</h3>
+      <p>Интерактивный проект на JS.</p>
+      <button>Открыть</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="glass">
+  <h2>Контакты</h2>
+  <p>Telegram: @dmeintt</p>
+  <p>Email: example@mail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Андрей Уренцев</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
